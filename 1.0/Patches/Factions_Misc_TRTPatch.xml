@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Patch - Adding Trading Caravans ========== -->
+
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/caravanTraderKinds</xpath>
+                <value>
+                    <li>Caravan_Outlander_Excavation</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name="TribeBase"]/caravanTraderKinds</xpath>
+                <value>
+                    <li>Caravan_Neolithic_Excavation</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+
+    <!-- === Code for 'The Rock Trade' by EarthyTurtle. === -->
+    <!-- === This label is actually just so I don't accidently place anything after the Patch tag. :P === -->
+</Patch>

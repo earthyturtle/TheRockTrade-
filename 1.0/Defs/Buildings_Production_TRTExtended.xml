@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Packing Spot ====================-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>TRTCratingSpot</defName>
+    <label>crating spot</label>
+    <description>A spot designated to pack large heavy objects into crates, typically rocks and slag debris.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>trt_packingspot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3.1,3.1)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <WorkToBuild>750</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <size>(3,3)</size>
+    <designationCategory>Misc</designationCategory>
+    <passability>Standable</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <workSpeedPenaltyTemperature>true</workSpeedPenaltyTemperature>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li>
+        <compClass>CompReportWorkSpeed</compClass>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+    </placeWorkers>
+  </ThingDef>
+
+
+    <!-- === Code for 'The Rock Trade' by EarthyTurtle. === -->
+    <!-- === This label is actually just so I don't accidently place anything after the Defs tag. :P === -->
+</Defs>

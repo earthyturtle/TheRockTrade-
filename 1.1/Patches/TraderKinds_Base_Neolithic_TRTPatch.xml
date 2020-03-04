@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Patch - Alter Tribal Base Market ========== -->
+
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
+                <value>
+                    <li Class="StockGenerator_Category">
+                        <categoryDef>Chunks</categoryDef>
+                        <price>Cheap</price>
+                        <thingDefCountRange>
+                            <min>1</min>
+                            <max>1</max>
+                        </thingDefCountRange>
+                        <countRange>
+                            <min>0</min>
+                            <max>10</max>
+                        </countRange>
+                    </li>
+                    <li Class="StockGenerator_Category">
+                        <categoryDef>StoneChunks</categoryDef>
+                        <price>Cheap</price>
+                        <thingDefCountRange>
+                            <min>2</min>
+                            <max>3</max>
+                        </thingDefCountRange>
+                        <countRange>
+                            <min>20</min>
+                            <max>35</max>
+                        </countRange>
+                    </li>
+                    <li Class="StockGenerator_Category">
+                        <categoryDef>StoneBlocks</categoryDef>
+                        <price>Cheap</price>
+                        <thingDefCountRange>
+                            <min>2</min>
+                            <max>3</max>
+                        </thingDefCountRange>
+                        <countRange>
+                            <min>125</min>
+                            <max>200</max>
+                        </countRange>
+                    </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>TRTSlag</categoryDef>
+                <price>Cheap</price>
+                <thingDefCountRange>
+                    <min>1</min>
+                    <max>1</max>
+                </thingDefCountRange>
+                <countRange>
+                    <min>2</min>
+                    <max>5</max>
+                </countRange>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>TRTChunks</categoryDef>
+                <thingDefCountRange>
+                    <min>1</min>
+                    <max>2</max>
+                </thingDefCountRange>
+                <countRange>
+                    <min>5</min>
+                    <max>8</max>
+                </countRange>
+            </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+
+    <!-- === Code for 'The Rock Trade' by EarthyTurtle. === -->
+    <!-- === This label is actually just so I don't accidently place anything after the Patch tag. :P === -->
+</Patch>

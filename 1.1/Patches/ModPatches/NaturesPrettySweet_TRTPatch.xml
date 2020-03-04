@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Nature's Pretty Sweet</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--=============== Basalt Stone Chunks ====================-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="ChunkCrateBase">
+							<defName>BasaltChunkCrate</defName>
+							<label>basalt crate</label>
+							<graphicData>
+								<color>(228, 188, 147)</color>
+							</graphicData>
+							<statBases>
+								<MarketValue>35</MarketValue>
+								<Mass>57</Mass>
+							</statBases>
+							<butcherProducts>
+								<TKKN_ChunkLava>6</TKKN_ChunkLava>
+								<WoodLog>5</WoodLog>
+							</butcherProducts>
+							<smeltProducts>
+								<TKKN_BlockLava>120</TKKN_BlockLava>
+								<WoodLog>5</WoodLog>
+							</smeltProducts>
+						</ThingDef>
+						<RecipeDef ParentName="DeconstructChunkCrateBase">
+							<defName>Make_CrateBasalt</defName>
+							<label>pack a basalt crate</label>
+							<description>packs a crate full of basalt chunks.</description>
+							<jobString>packing a crate.</jobString>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>TKKN_ChunkLava</li>
+										</thingDefs>
+									</filter>
+									<count>6</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>WoodLog</li>
+										</thingDefs>
+									</filter>
+									<count>5</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>TKKN_ChunkLava</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<BasaltChunkCrate>1</BasaltChunkCrate>
+							</products>
+						</RecipeDef>
+						<ThingDef ParentName="ChunkBoxBase">
+							<defName>BasaltChunkBox</defName>
+							<label>basalt box</label>
+							<graphicData>
+								<color>(228, 188, 147)</color>
+							</graphicData>
+							<statBases>
+								<MarketValue>35</MarketValue>
+								<Mass>57</Mass>
+							</statBases>
+							<butcherProducts>
+								<TKKN_ChunkLava>6</TKKN_ChunkLava>
+								<Steel>5</Steel>
+							</butcherProducts>
+							<smeltProducts>
+								<TKKN_BlockLava>120</TKKN_BlockLava>
+								<Steel>5</Steel>
+							</smeltProducts>
+						</ThingDef>
+						<RecipeDef ParentName="DeconstructChunkCrateBase">
+							<defName>Make_BoxBasalt</defName>
+							<label>Weld together a basalt box</label>
+							<description>packs a box full of basalt chunks.</description>
+							<jobString>packing a box.</jobString>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>TKKN_ChunkLava</li>
+										</thingDefs>
+									</filter>
+									<count>6</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Steel</li>
+										</thingDefs>
+									</filter>
+									<count>5</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>TKKN_ChunkLava</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<BasaltChunkBox>1</BasaltChunkBox>
+							</products>
+						</RecipeDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

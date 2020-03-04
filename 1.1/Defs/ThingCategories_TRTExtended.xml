@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ========== Chunk Category Defs ========== -->
+
+
+    <ThingCategoryDef>
+        <defName>TRTChunks</defName>
+        <label>stone crates</label>
+        <parent>Chunks</parent>
+    </ThingCategoryDef>
+
+    <StuffCategoryDef>
+        <defName>TRTChunky</defName>
+        <label>stone material</label>
+    </StuffCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>TRTSlag</defName>
+        <label>slag crates</label>
+        <parent>Chunks</parent>
+    </ThingCategoryDef>
+
+    <StuffCategoryDef>
+        <defName>TRTSlaggy</defName>
+        <label>slag material</label>
+    </StuffCategoryDef>
+
+
+    <!-- === Code for 'The Rock Trade' by EarthyTurtle. === -->
+    <!-- === This label is actually just so I don't accidently place anything after the Defs tag. :P === -->
+</Defs>

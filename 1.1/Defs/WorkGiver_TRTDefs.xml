@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ========== Workgiver for Crating Station ========== -->
+  <WorkGiverDef>
+    <defName>DoBillsUseTRTCratingSpot</defName>
+    <label>pack things into crates</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TRTCratingSpot</li>
+    </fixedBillGiverDefs>
+    <verb>crate</verb>
+    <gerund>crating at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+</Defs>
