@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <!-- ========== Language - Trader Def Names ========== -->
-  <Caravan_Outlander_Excavation.label>nomadic miners</Caravan_Outlander_Excavation.label>
+  <Caravan_Outlander_Excavation.label>rock dealers</Caravan_Outlander_Excavation.label>
   <Caravan_Neolithic_Excavation.label>earth movers</Caravan_Neolithic_Excavation.label>
   <Orbital_Excavation.label>excavation trader</Orbital_Excavation.label>
+  <TRTChunks.label>various chunks</TRTChunks.label>
 </LanguageData>

@@ -2,21 +2,21 @@
 <ModMetaData>
   <name>The Rock Trade</name>
   <author>EarthyTurtle</author>
-   <url>https://github.com/earthyturtle/TheRockTrade</url>
+   <url>https://github.com/earthyturtle/TheRockTrade-</url>
   <supportedVersions>
-    <li>1.0</li>
     <li>1.1</li>
   </supportedVersions>
 	<packageId>earthyturtle.therocktrade</packageId>
   <description>The Rock Trade ~ Lets you buy and trade chunks.
-Mod Version [1.7.14]
-Supports Rimworld Versions: 1.0, 1.1 and Royalty
+Mod Version [1.9.18]
+Supports Rimworld Versions: 1.1 and Royalty
 
-This mod makes storing, transporting, trading and using stone chunks easier with a crating system. A total of 3 new rock traders are added, that specifically buy and sell chunks.
+This mod makes stone chunks trade-able and is compatible with modded chunks. Adds a total of 3 new rock traders are added, that specifically buy and sell chunks and updates vanilla trade to include chunks.
 
 'The Rock Trade' is under the creative commons license. Cite, learn and use aspects from this mod, credit optional but appreciated ;). Please do not outright copy this mod and/or re-upload without my consent.</description>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>
+    <li>earthyturtle.letstrade</li>
   </loadAfter>
 </ModMetaData>
