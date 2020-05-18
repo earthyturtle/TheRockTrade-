@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Trader - Outlander -->
+
+  <Caravan_Outlander_Excavation.label>石材問屋</Caravan_Outlander_Excavation.label>
+
+
+  <!-- Trader - Tribal -->
+
+  <Caravan_Neolithic_Excavation.label>採掘商</Caravan_Neolithic_Excavation.label>
+
+
+  <!-- Trader - Orbital -->
+
+  <Orbital_Excavation.label>石材組合</Orbital_Excavation.label>
+
+</LanguageData>
